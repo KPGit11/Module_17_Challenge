@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import studentRoutes from './studentRoutes.js';
+import studentRoutes from '../routes/api/studentRoutes';
 
 const router = Router();
 router.use('/students', studentRoutes);

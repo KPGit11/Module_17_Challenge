@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import { headCount, grade } from '../../controllers/studentController.js';
 
-const router = Router();
+const sudentRoutes = Router();
 
-router.route('/').get(headCount);
-router.route('/:studentId').get(grade);
+sudentRoutes.route('/').get(headCount);
+sudentRoutes.route('/:studentId').get(grade);
 
-export default router;
+export default sudentRoutes;
